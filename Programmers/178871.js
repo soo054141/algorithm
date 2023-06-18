@@ -7,7 +7,7 @@ function solution(players, callings) {
   }
 
   for (const call of callings) {
-    const next = playersMap.get(call) - 1; // 추월 등수
+    const next = playersMap.get(call) - 1; // 추월등수
     playersMap.set(call, next);
     const target = result[next]; // 바뀌는 사람
     playersMap.set(target, next + 1);
