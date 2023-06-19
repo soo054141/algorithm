@@ -14,5 +14,3 @@ function solution(s) {
     
     return result;
 }
-
-//다른사람의 풀이
