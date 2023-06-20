@@ -10,3 +10,6 @@ function solution(a, b, n) {
     }
     return changed;   
 }
+
+//다른 사람의 풀이
+solution = (a, b, n) => Math.floor(Math.max(n - b, 0) / (a - b)) * b
