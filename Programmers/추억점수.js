@@ -15,3 +15,9 @@ function solution(name, yearning, photo) {
     }
     return result;
 }
+
+//다른 사람의 풀이
+//map+reduce로 바로 리턴, yearing[name.indexOf(b)]값이 undefined이면 0점을 던져줌
+function solution2(name, yearning, photo) {
+    return photo.map((v) => v.reduce((a,b) => a += yearning[name.indexOf(b)] ?? 0 ,0));
+}
